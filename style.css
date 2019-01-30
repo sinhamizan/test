@@ -1,0 +1,54 @@
+.main {
+	position: relative;
+	width: 100%;
+	height: 220px;
+	margin-top: 120px;
+}
+.front {
+	position: absolute;
+	background: red;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.back {
+	position: absolute;
+	background: green;
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+	-ms- transition: 0.5s;
+	transition: 0.5s;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.main:hover .front {
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	-ms-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+.main:hover .back {
+	-ms-transition: 0.5s;
+	transition: 0.5s;
+	-ms-transform: rotateY(0deg);
+	transform: rotateY(0deg);
+}
